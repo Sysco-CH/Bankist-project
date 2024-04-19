@@ -19,7 +19,7 @@ To get this project up and running on your local machine, follow these steps:
 Clone the Repository
 bash
 Copy code
-git clone https://github.com/yourusername/bankist-app.git
+git clone https://github.com/Sysco-CH/Bankist-project.git
 Navigate to the project directory
 bash
 Copy code
