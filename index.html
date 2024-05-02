@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+    <link rel="shortcut icon" type="image/png" href="/assets/icon.png" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
     <title>Bankist</title>
   </head>
   <body>
     <!-- TOP NAVIGATION -->
     <nav>
       <p class="welcome">Log in to get started</p>
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img src="assets/logo.png" alt="Logo" class="logo" />
       <form class="login">
         <input
           type="text"
@@ -35,7 +36,6 @@
         <button class="login__btn">&rarr;</button>
       </form>
     </nav>
-
     <main class="app">
       <!-- BALANCE -->
       <div class="balance">
@@ -70,8 +70,6 @@
         <p class="summary__value summary__value--in">0000€</p>
         <p class="summary__label">Out</p>
         <p class="summary__value summary__value--out">0000€</p>
-        <p class="summary__label">Interest</p>
-        <p class="summary__value summary__value--interest">0000€</p>
         <button class="btn--sort">&downarrow; SORT</button>
       </div>
 
@@ -119,10 +117,42 @@
       </p>
     </main>
 
-    <!-- <footer>
-      &copy; by Jonas Schmedtmann. Learning project on Udemy.
-    </footer> -->
+    <!-- Popup Overlay -->
+    <div id="instructionPopup" class="popup-overlay" style="display: none">
+      <div class="popup-content">
+        <h2>Hi there! Please read this instrucion before using this app 🤓</h2>
+        <p>You can log in ⇢</p>
+        <ul>
+          <li>User: js</li>
+          <li>PIN: 1111</li>
+        </ul>
+        <p>You can transfer money 💸</p>
+        <ul>
+          <li>To: jd</li>
+          <li>Amount: Enter a realistic amount - only numbers</li>
+          <li>This amount will appear as the first movement in the list as a
+          withdrawal.</li>
+        </ul>
+        <p>
+          You can request loan 🤑
+          <ul>
+          <li>Free amount, but don't be greedy... 🙄</li>
+          <li>This amount will appear as the first movement in the list as a
+          deposit.</li>
+          </ul>
+        </p>
+        <p>You can also sort your movements or check Jessica's account to see if she received the money you sent. 🙂</p>
+        <ul>
+          <li>User: jd</li>
+          <li>PIN: 2222</li>
+        </ul>
+        <button id="close" onclick="closePopup()">Got it!</button>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <footer>&copy; by Szilvia Szalko. Learning project based on Udemy Course.</footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

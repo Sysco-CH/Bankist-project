@@ -1,9 +1,3 @@
-/*
- * Use this CSS to learn some intersting techniques,
- * in case you're wondering how I built the UI.
- * Have fun! 😁
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +10,8 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
   color: #444;
   background-color: #f3f3f3;
   height: 100vh;
@@ -86,6 +81,7 @@ nav {
 /* MAIN */
 .app {
   position: relative;
+  min-width: 100%;
   max-width: 100rem;
   margin: 4rem auto;
   display: grid;
@@ -125,6 +121,7 @@ nav {
 /* MOVEMENTS */
 .movements {
   grid-row: 2 / span 3;
+  min-width: fit-content;
   background-color: #fff;
   border-radius: 1rem;
   overflow: scroll;
@@ -211,6 +208,7 @@ nav {
   border-radius: 1rem;
   padding: 3rem 4rem;
   color: #333;
+  min-width: 20rem;
 }
 
 .operation--transfer {
@@ -294,4 +292,55 @@ h2 {
 
 .timer {
   font-weight: 600;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  transition: width 0.3s ease;
+}
+
+.popup-content p {
+  font-weight: 600;
+}
+
+.popup-content h2 {
+  text-transform: uppercase;
+  margin: 2rem;
+  color: #333;
+}
+
+.popup-content ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+#close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  margin: 2rem;
+  padding: 1rem 3rem;
+  border: solid grey 1px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f3f3f3;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }

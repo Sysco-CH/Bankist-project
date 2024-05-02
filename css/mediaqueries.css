@@ -1,0 +1,95 @@
+@media (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .welcome,
+  .login {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .login__input,
+  .form__input {
+    font-size: 1.4rem;
+  }
+
+  .login__btn,
+  .form__btn {
+    font-size: 2rem;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .movements,
+  .operation {
+    padding: 2rem;
+  }
+}
+
+.popup-content {
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .logo {
+    max-height: 4rem;
+  }
+
+  nav {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .balance {
+    align-items: flex-start;
+  }
+  .balance__label {
+    font-size: 2rem;
+  }
+
+  .balance__value {
+    font-size: 2rem;
+  }
+
+  .movements__row {
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+  }
+
+  .movements__type,
+  .movements__date,
+  .movements__value {
+    font-size: 1.2rem;
+  }
+
+  .summary,
+  .operation {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .summary__value,
+  .form__btn {
+    font-size: 1.6rem;
+  }
+
+  .popup-content {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
