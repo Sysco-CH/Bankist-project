@@ -67,19 +67,18 @@
   }
 
   .balance__value {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .movements__row {
-    flex-direction: column;
     align-items: start;
-    padding: 1rem;
+    justify-content: center;
+    padding: 2rem 1rem;
   }
 
   .movements__type,
-  .movements__date,
   .movements__value {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .summary,
@@ -91,6 +90,7 @@
   .summary__value,
   .form__btn {
     font-size: 1.6rem;
+    font-weight: 600;
   }
 
   .popup-content {
